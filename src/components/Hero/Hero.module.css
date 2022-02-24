@@ -1,0 +1,4 @@
+.heroSection {
+    height: calc(100vh - 80px);
+    background: url('../../assets/img/bgHero.svg');
+}

@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import About from './components/About/About'
+import Hero from './components/Hero/Hero'
+import Event from './components/HomeEvent/Event'
+import Navbar from './components/Navbar/Navbar'
+import Registeration from './components/Registeration/Registeration'
+import Track from './components/Track/Track'
+import Guide from './components/Guide/Guide'
+import Prize from './components/Prizes/Prize'
+import Sponsors from './components/Sponsors/Sponsors'
+import Contact from './components/Contact/Contact'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className='pb-10'>
+            <Navbar />
+            <Hero />
+            <About />
+            <Track />
+            <Registeration />
+            <Event />
+            <Guide />
+            <Prize />
+            <Sponsors />
+            <Contact />
+        </div>
+    )
 }
 
-export default App;
+export default App
