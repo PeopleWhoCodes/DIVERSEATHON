@@ -8,10 +8,14 @@ import Guide from './components/Guide/Guide'
 import Prize from './components/Prizes/Prize'
 import Sponsors from './components/Sponsors/Sponsors'
 import Contact from './components/Contact/Contact'
+import Schedule from './components/Schedule/Schedule'
+import Speakers from './components/Speakers/Speaker'
+import Faq from './components/Faq/Faq'
+import Footer from './components/Footer/Footer'
 
 function App() {
     return (
-        <div className='pb-10'>
+        <div>
             <Navbar />
             <Hero />
             <About />
@@ -19,9 +23,13 @@ function App() {
             <Registeration />
             <Event />
             <Guide />
+            <Schedule />
+            <Speakers />
             <Prize />
             <Sponsors />
+            <Faq />
             <Contact />
+            <Footer />
         </div>
     )
 }
