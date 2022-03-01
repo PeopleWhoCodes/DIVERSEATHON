@@ -3,7 +3,7 @@ import styles from './Hero.module.css'
 import topImg from '../../assets/img/hero2.svg'
 import Button from './../shared/Buttons/Button'
 
-const Hero = () => {
+const Hero = ({ data }) => {
     return (
         <div
             className={`${styles.heroSection} text-white flex flex-col items-center justify-center`}
@@ -17,7 +17,7 @@ const Hero = () => {
                         DIVERSEATHON
                     </h1>
                     <p className='text-Gray font-medium text-xl screen1:text-lg screen7:text-base'>
-                        15th May - 16th May, 2022
+                        {data.date}
                     </p>
                 </div>
                 <div className='right h-[230px] screen1:h-[180px] screen7:hidden'>
@@ -29,8 +29,15 @@ const Hero = () => {
                 </div>
             </div>
             <div className='buttonWrapper w-full flex px-12 gap-x-8 mt-4 screen6:px-8 screen5:gap-x-4'>
-                <Button text={'Register'} hero />
-                <Button text={'Join Discord'} transparent hero />
+                {data.buttons.map((btn) => (
+                    <Button
+                        data={btn}
+                        key={btn._id}
+                        text={btn.name}
+                        hero={btn.hero}
+                        transparent={btn.transparent}
+                    />
+                ))}
             </div>
         </div>
     )

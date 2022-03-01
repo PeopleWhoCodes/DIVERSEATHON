@@ -1,1 +1,11 @@
-default X-padding -> 80px
+1) Button
+{
+    _id,
+    name,
+    type['OUT_LINK'|'PAGE_LINK'|'HASH_LINK'|'MORE'|'MAIL'],
+    clickEvent,
+    hashLink[true/false],
+    transparent[true/false],
+    link,
+    more
+},

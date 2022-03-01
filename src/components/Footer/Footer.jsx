@@ -1,10 +1,12 @@
 import React from 'react'
 import { LinkedIn, Instagram, YouTube, Twitter } from '@mui/icons-material'
+import { HashLink } from 'react-router-hash-link'
 
 const style = {
     extraLinksPara: `font-medium text-lg cursor-pointer`,
     heading: `text-3xl font-semibold`,
     condition: `text-[#CDCBCB] cursor-pointer screen5:text-sm text-center`,
+    socialLinks: `hover:text-[#ccc] cursor-pointer transition-color delay-200`,
 }
 
 const Footer = () => {
@@ -17,32 +19,49 @@ const Footer = () => {
                         <h1 className={style.heading}>Quick Links</h1>
                     </div>
                     <div className='socialLink flex gap-x-3 text-3xl'>
-                        <LinkedIn sx={{ fontSize: 30 }} />
-                        <Instagram sx={{ fontSize: 30 }} />
-                        <YouTube sx={{ fontSize: 30 }} />
-                        <Twitter sx={{ fontSize: 30 }} />
+                        <LinkedIn
+                            sx={{ fontSize: 30 }}
+                            className={style.socialLinks}
+                        />
+                        <Instagram
+                            sx={{ fontSize: 30 }}
+                            className={style.socialLinks}
+                        />
+                        <YouTube
+                            sx={{ fontSize: 30 }}
+                            className={style.socialLinks}
+                        />
+                        <Twitter
+                            sx={{ fontSize: 30 }}
+                            className={style.socialLinks}
+                        />
                     </div>
                 </div>
-                {/* <div className='right flex flex-col gap-y-4'>
-                    <div className='heading'>
-                        <h1 className={style.heading}>More</h1>
-                    </div>
-                    <ul className='font-light text-lg gap-y-1 flex flex-col'>
-                        <li className='cursor-pointer w-min'>Blogs</li>
-                        <li className='cursor-pointer w-min'>Volunteers</li>
-                    </ul>
-                </div> */}
             </div>
             {/* Extra Links */}
             <div className='extra-links py-3 flex items-center gap-x-6 screen2:gap-x-3 screen4:hidden'>
-                <p className={style.extraLinksPara}>About</p>
-                <p className={style.extraLinksPara}>Track</p>
-                <p className={style.extraLinksPara}>Schedule</p>
-                <p className={style.extraLinksPara}>Speakers</p>
-                <p className={style.extraLinksPara}>Prizes</p>
-                <p className={style.extraLinksPara}>Sponsors</p>
-                <p className={style.extraLinksPara}>Team</p>
-                <p className={style.extraLinksPara}>FAQs</p>
+                <HashLink to='/#ABOUT' className={style.extraLinksPara}>
+                    About
+                </HashLink>
+                <HashLink to='/#TRACK' className={style.extraLinksPara}>
+                    Track
+                </HashLink>
+                <HashLink to='/#SCHEDULE' className={style.extraLinksPara}>
+                    Schedule
+                </HashLink>
+                <HashLink to='/#SPEAKERS' className={style.extraLinksPara}>
+                    Speakers
+                </HashLink>
+                <HashLink to='/#PRIZE' className={style.extraLinksPara}>
+                    Prizes
+                </HashLink>
+                <HashLink to='/#SPONSORS' className={style.extraLinksPara}>
+                    Sponsors
+                </HashLink>
+                {/* <HashLink to='/#' className={style.extraLinksPara}>Team</HashLink> */}
+                <HashLink to='/#FAQ' className={style.extraLinksPara}>
+                    FAQs
+                </HashLink>
             </div>
             {/* Line */}
             <div className='line w-full border-t border-[#ffffffd5] screen4:hidden'></div>

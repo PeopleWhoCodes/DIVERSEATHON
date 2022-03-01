@@ -1,8 +1,7 @@
 import React from 'react'
 import SponsorCard from './SponsorCard'
-import styles from './Sponsor.module.css'
 
-const SposnorTimeline = ({ heading, id }) => {
+const SposnorTimeline = ({ heading, id, data }) => {
     return (
         <div className='flex flex-col items-center'>
             <div
@@ -10,6 +9,7 @@ const SposnorTimeline = ({ heading, id }) => {
             >
                 <p
                     className={` before:bg-[#E8FFFE] before:h-[35px] screen3:before:h-[28px] before:absolute before:mt-4 before:-ml-3 z-[10] before:z-[-1]
+                    before:w-sponsor${id} screen3:before:w-sponsor${id}_1  screen5:before:hidden
                     ${
                         id === 1
                             ? 'before:w-sponsor1 screen3:before:w-sponsor1_1'
@@ -27,24 +27,15 @@ const SposnorTimeline = ({ heading, id }) => {
                             ? 'before:w-sponsor7 screen3:before:w-sponsor7_1'
                             : ''
                     }
-                    screen5:before:hidden
                     `}
                 >
                     {heading}
                 </p>
             </div>
             <div className='sponsorCardWrapper flex items-center justify-center mt-14 flex-wrap gap-x-8 gap-y-5'>
-                <SponsorCard />
-                <SponsorCard />
-                <SponsorCard />
-                <SponsorCard />
-                <SponsorCard />
-                <SponsorCard />
-                <SponsorCard />
-                <SponsorCard />
-                <SponsorCard />
-                <SponsorCard />
-                <SponsorCard />
+                {data?.map((card) => (
+                    <SponsorCard key={card._id} data={card} />
+                ))}
             </div>
         </div>
     )

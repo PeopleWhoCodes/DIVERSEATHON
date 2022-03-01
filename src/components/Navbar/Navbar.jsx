@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link'
 import logo from '../../assets/logo.svg'
 import Button from '../shared/Buttons/Button'
 import MobileNav from './MobileNav'
@@ -54,27 +55,31 @@ const Navbar = () => {
                     <img src={logo} alt='PWC' className='w-[45px] h-[45px]' />
                 </div>
                 {/* center */}
-                <div className='center flex items-center justify-between w-[75%] screen8:hidden'>
-                    <TopLink title={'About'} />
-                    <TopLink title={'Tracks'} />
-                    <TopLink title={'Schedule'} />
-                    <TopLink title={'Speakers'} />
-                    <TopLink title={'Sponsors'} />
-                    <TopLink title={'Team'} />
-                    <TopLink title={'FAQs'} />
+                <div className='center flex items-center gap-x-6 screen8:hidden'>
+                    <TopLink title={'About'} id={'ABOUT'} />
+                    <TopLink title={'Tracks'} id={'TRACK'} />
+                    <TopLink title={'Schedule'} id={'SCHEDULE'} />
+                    <TopLink title={'Speakers'} id={'SPEAKERS'} />
+                    <TopLink title={'Sponsors'} id={'SPONSORS'} />
+                    {/* <TopLink title={'Team'} id={'ABOUT'} /> */}
+                    <TopLink title={'FAQs'} id={'FAQ'} />
                 </div>
                 {/* right */}
                 <div className='right screen8:hidden'>
-                    <Button text={'Contact'} navbar />
+                    <Button
+                        data={{ hashLink: true, link: 'CONTACT' }}
+                        text={'Contact'}
+                        navbar
+                    />
                 </div>
                 <div
                     id='hamburger__mobile__toogle_me'
                     className='hamburger toggle flex-col hidden screen8:flex cursor-pointer'
                     onClick={(e) => openMobileNav(e)}
                 >
-                    <span className='bar w-8 h-1 my-1 mx-auto bg-[#111111] rounded-sm transition ease-in-out delay-200'></span>
-                    <span className='bar w-8 h-1 my-1 mx-auto bg-[#111111] rounded-sm transition ease-in-out delay-200'></span>
-                    <span className='bar w-8 h-1 my-1 mx-auto bg-[#111111] rounded-sm transition ease-in-out delay-200'></span>
+                    <span className='bar w-8 h-1 my-1 mx-auto bg-[#111111] rounded-sm transition ease-in-out delay-100'></span>
+                    <span className='bar w-8 h-1 my-1 mx-auto bg-[#111111] rounded-sm transition ease-in-out delay-100'></span>
+                    <span className='bar w-8 h-1 my-1 mx-auto bg-[#111111] rounded-sm transition ease-in-out delay-100'></span>
                 </div>
             </nav>
             <MobileNav closeMobileNav={closeMobileNav} />
@@ -84,6 +89,10 @@ const Navbar = () => {
 
 export default Navbar
 
-const TopLink = ({ title }) => {
-    return <p className='text-xl font-medium cursor-pointer'>{title}</p>
+const TopLink = ({ title, id }) => {
+    return (
+        <HashLink to={`/#${id}`} className='text-xl font-medium cursor-pointer'>
+            {title}
+        </HashLink>
+    )
 }

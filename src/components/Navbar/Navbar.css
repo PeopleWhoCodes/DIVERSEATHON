@@ -14,3 +14,19 @@ nav .hamburger.active .bar:nth-child(3) {
 .menuIcons.active {
     display: flex;
 }
+
+.bottomMobileNavbar {
+    animation: 0.5s boxOpacity;
+}
+
+/* Animations */
+@keyframes boxOpacity {
+    0% {
+        opacity: 0;
+        /* transform: translateY(-5%); */
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const SponsorCard = () => {
+const SponsorCard = ({ data }) => {
     return (
         <div className='px-4 py-2 rounded-md w-40 h-14 bg-SponsorCard items-center flex justify-center'>
-            <img src='' alt='sponsor Img' />
+            <img src={data?.img} alt={data?.title} />
         </div>
     )
 }
