@@ -1,20 +1,20 @@
 import React from 'react'
 import FaqBox from './FaqBox'
 import styles from './Faq.module.css'
+import Heading from '../shared/Text/Heading'
+import Paragraph from './../shared/Text/Paragraph'
 
 const Faq = () => {
     return (
         <div>
             <div className='px-5'>
-                <div className='innerTrackBox px-20 py-14 shadow bg-TrackBack rounded-lg min-h-[600px] flex flex-col items-center gap-y-14'>
-                    <h1 className='text-5xl tracking-widest font-bold text-Primary'>
-                        FAQs
-                    </h1>
-                    <p className='text-2xl text-TextPassage w-[70%] text-center'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vitae felis, nisl eleifend mauris, eu nunc tincidunt.
-                        Amet et tellus accumsan,.
-                    </p>
+                <div className='innerTrackBox px-20 py-14 shadow bg-TrackBack rounded-lg min-h-[600px] flex flex-col items-center gap-y-14 screen2:px-16 screen4:px-10'>
+                    <Heading text={'FAQs'} />
+                    <Paragraph
+                        text={
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.'
+                        }
+                    />
                     {/* <PrizeBox /> */}
                     <div className='flex w-[100%] flex-col flex-wrap items-center justify-center gap-y-10 select-none'>
                         <ul

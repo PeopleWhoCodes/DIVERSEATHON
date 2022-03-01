@@ -1,0 +1,16 @@
+/* NAVBAR */
+nav .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+nav .hamburger.active .bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+
+nav .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+.menuIcons.active {
+    display: flex;
+}

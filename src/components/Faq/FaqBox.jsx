@@ -7,7 +7,7 @@ const FaqBox = ({ text1, text2 }) => {
     return (
         <div className='faq__box'>
             <div
-                className='top text-FaqHeading filterDropDown text-xl font-medium h-10 py-2 px-2 flex items-center justify-between md:p0 cursor-pointer'
+                className='top text-FaqHeading filterDropDown text-xl font-medium min-h-10 py-2 px-2 flex items-center justify-between md:p0 cursor-pointer'
                 onClick={() => setVisibility(!visibility)}
                 style={{
                     borderBottomLeftRadius: visibility ? '0' : '',
