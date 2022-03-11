@@ -27,21 +27,24 @@ export const HomePage = {
         ],
     },
     About: {
-        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan, lorem dictumst vitae condimentum odio. Tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan, lorem dictumst vitae condimentum odio. Tempus.',
+        about: {
+            para1: `Diverseathon is a 36-hour hackathon. This hackathon allows participants to come together at one platform and flex their skills, collaborate with fellow participants, and learn something new to build an amazing solution to the real world problem with the help or mentors, who are present in the hackathon to provide guidance.`,
+            para2: `Our goal is to help students succeed in the field of technology. We provide participants with resources, connections to fuel their ideas and encourage them to take next step forward in tech.`,
+        },
     },
     Tracks: {
-        Info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
+        Info: 'Our tracks are based on real-life problems and aims to slove the problems for a better future of India, we also aim to uplift ‘Women in Tech’, hence we have one special track dedicated to them.',
         data: [
-            // { _id: 1, img: TestImage, title: 'Fintech' },
-            // { _id: 2, img: TestImage, title: 'Fintech' },
-            // { _id: 3, img: TestImage, title: 'Fintech' },
+            { _id: 1, img: TestImage, title: 'Fintech' },
+            { _id: 2, img: TestImage, title: 'Fintech' },
+            { _id: 3, img: TestImage, title: 'Fintech' },
             // { _id: 4, img: TestImage, title: 'Fintech' },
             // { _id: 5, img: TestImage, title: 'Fintech' },
             // { _id: 6, img: TestImage, title: 'Fintech' },
         ],
     },
     Registeration: {
-        Info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
+        Info: 'Join us in our venture and be registering. If you have any idea get it to live by applying as a participant and if you love to share your knowledge join us as mentor.',
         buttons: [
             {
                 _id: 1,
@@ -64,22 +67,22 @@ export const HomePage = {
         ],
     },
     Events: {
-        Info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
+        Info: 'Check out our hackathon events and participate in them to get some amazing insights and updates.',
         data: [
-            // {
-            //     _id: 1,
-            //     img: TestImage,
-            //     title: 'Portfolio Development Bootcamp',
-            //     date: '15 March, 2022',
-            //     link: '/',
-            // },
-            // {
-            //     _id: 2,
-            //     img: TestImage,
-            //     title: 'Portfolio Development Bootcamp',
-            //     date: '15 March, 2022',
-            //     link: '/',
-            // },
+            {
+                _id: 1,
+                img: TestImage,
+                title: 'Portfolio Development Bootcamp',
+                date: '15 March, 2022',
+                link: '/',
+            },
+            {
+                _id: 2,
+                img: TestImage,
+                title: 'Portfolio Development Bootcamp',
+                date: '15 March, 2022',
+                link: '/',
+            },
             // {
             //     _id: 3,
             //     img: TestImage,
@@ -123,7 +126,7 @@ export const HomePage = {
         ],
     },
     Guide: {
-        Info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
+        Info: 'We are really strict with rules and really important to be followed and here is teh guide to make your journey adhead in the hackathon easy.',
         buttons: [
             {
                 _id: 1,
@@ -146,71 +149,71 @@ export const HomePage = {
         ],
     },
     Schedule: {
-        Info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
+        Info: 'Here is the schedule of the hackathon.',
         data: [
-            // {
-            //     _id: 1,
-            //     scheduleTitle: 'DAY 1 - Saturday, May 15, 2022',
-            //     timingData: [
-            //         {
-            //             _id: 1,
-            //             cermonyType: 'Opening Ceremony',
-            //             time: '6:00 PM IST',
-            //             desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, facere!',
-            //         },
-            //         {
-            //             _id: 2,
-            //             cermonyType: 'Opening Ceremony',
-            //             time: '7:00 PM IST',
-            //             desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, facere!',
-            //         },
-            //         {
-            //             _id: 3,
-            //             cermonyType: 'Opening Ceremony',
-            //             time: '8:00 PM IST',
-            //             desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, facere!',
-            //         },
-            //     ],
-            // },
-            // {
-            //     _id: 2,
-            //     scheduleTitle: 'DAY 1 - Saturday, May 15, 2022',
-            //     timingData: [
-            //         {
-            //             _id: 1,
-            //             cermonyType: 'Opening Ceremony',
-            //             time: '6:00 PM IST',
-            //             desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, facere!',
-            //         },
-            //         {
-            //             _id: 2,
-            //             cermonyType: 'Opening Ceremony',
-            //             time: '6:00 PM IST',
-            //             desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, facere!',
-            //         },
-            //         {
-            //             _id: 3,
-            //             cermonyType: 'Opening Ceremony',
-            //             time: '6:00 PM IST',
-            //             desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, facere!',
-            //         },
-            //     ],
-            // },
+            {
+                _id: 1,
+                scheduleTitle: 'DAY 1 - Saturday, May 15, 2022',
+                timingData: [
+                    {
+                        _id: 1,
+                        cermonyType: 'Opening Ceremony',
+                        time: '6:00 PM IST',
+                        desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, facere!',
+                    },
+                    {
+                        _id: 2,
+                        cermonyType: 'Opening Ceremony',
+                        time: '7:00 PM IST',
+                        desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, facere!',
+                    },
+                    {
+                        _id: 3,
+                        cermonyType: 'Opening Ceremony',
+                        time: '8:00 PM IST',
+                        desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, facere!',
+                    },
+                ],
+            },
+            {
+                _id: 2,
+                scheduleTitle: 'DAY 1 - Saturday, May 15, 2022',
+                timingData: [
+                    {
+                        _id: 1,
+                        cermonyType: 'Opening Ceremony',
+                        time: '6:00 PM IST',
+                        desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, facere!',
+                    },
+                    {
+                        _id: 2,
+                        cermonyType: 'Opening Ceremony',
+                        time: '6:00 PM IST',
+                        desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, facere!',
+                    },
+                    {
+                        _id: 3,
+                        cermonyType: 'Opening Ceremony',
+                        time: '6:00 PM IST',
+                        desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, facere!',
+                    },
+                ],
+            },
         ],
     },
     Speakers: {
-        Info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
+        Info: 'Meet our amazing speakers who will be sharing their knowledge with us.',
         data: [
-            // { _id: 1, img: TestImage, title: 'Fintech' },
-            // { _id: 2, img: TestImage, title: 'Fintech' },
-            // { _id: 3, img: TestImage, title: 'Fintech' },
-            // { _id: 4, img: TestImage, title: 'Fintech' },
-            // { _id: 5, img: TestImage, title: 'Fintech' },
-            // { _id: 6, img: TestImage, title: 'Fintech' },
-            // { _id: 7, img: TestImage, title: 'Fintech' },
-            // { _id: 8, img: TestImage, title: 'Fintech' },
-            // { _id: 9, img: TestImage, title: 'Fintech' },
-            // { _id: 10, img: TestImage, title: 'Fintech' },
+            { _id: 1, img: TestImage, title: 'Fintech' },
+            { _id: 2, img: TestImage, title: 'Fintech' },
+            { _id: 3, img: TestImage, title: 'Fintech' },
+            { _id: 4, img: TestImage, title: 'Fintech' },
+            { _id: 5, img: TestImage, title: 'Fintech' },
+            { _id: 6, img: TestImage, title: 'Fintech' },
+            { _id: 7, img: TestImage, title: 'Fintech' },
+            { _id: 8, img: TestImage, title: 'Fintech' },
+            { _id: 9, img: TestImage, title: 'Fintech' },
+            { _id: 10, img: TestImage, title: 'Fintech' },
         ],
         buttons: [
             {
@@ -226,23 +229,23 @@ export const HomePage = {
         ],
     },
     Prizes: {
-        Info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
+        Info: 'We believe the contributions should be rewarded.',
         data: [
-            // {
-            //     _id: 1,
-            //     title: '1st Prize',
-            //     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
-            // },
-            // {
-            //     _id: 2,
-            //     title: '1st Prize',
-            //     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
-            // },
-            // {
-            //     _id: 3,
-            //     title: '1st Prize',
-            //     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
-            // },
+            {
+                _id: 1,
+                title: '1st Prize',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
+            },
+            {
+                _id: 2,
+                title: '1st Prize',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
+            },
+            {
+                _id: 3,
+                title: '1st Prize',
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
+            },
         ],
         buttons: [
             {
@@ -380,42 +383,48 @@ export const HomePage = {
         ],
     },
     Faq: {
-        Info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
+        Info: 'Most of the questions asked by participants are answered in the FAQ section, if there are still any doubts you all are free to reach out to us through mail.',
         data: [
             {
                 _id: 1,
-                ques: 'lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet',
+                ques: 'Who should attend?',
                 ans: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam earum eius voluptatum quo atque aliquam obcaecati recusandae facere inventore id. lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet',
             },
             {
                 _id: 2,
-                ques: 'lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet',
+                ques: 'How much does this event cost?',
                 ans: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam earum eius voluptatum quo atque aliquam obcaecati recusandae facere inventore id. lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet',
             },
             {
                 _id: 3,
-                ques: 'lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet',
+                ques: 'Do I have to register seperately for all the events?',
                 ans: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam earum eius voluptatum quo atque aliquam obcaecati recusandae facere inventore id. lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet',
             },
             {
                 _id: 4,
-                ques: 'lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet',
+                ques: 'Where will the event be hosted?',
                 ans: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam earum eius voluptatum quo atque aliquam obcaecati recusandae facere inventore id. lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet',
             },
             {
                 _id: 5,
-                ques: 'lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet',
+                ques: 'What is Hackathon? From where can I know more about this?',
                 ans: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam earum eius voluptatum quo atque aliquam obcaecati recusandae facere inventore id. lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet',
             },
             {
                 _id: 6,
-                ques: 'lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet',
+                ques: 'How winners will be selected?',
+                ans: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam earum eius voluptatum quo atque aliquam obcaecati recusandae facere inventore id. lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet',
+            },
+            {
+                _id: 7,
+                ques: 'I need support! Whom to contact?',
                 ans: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam earum eius voluptatum quo atque aliquam obcaecati recusandae facere inventore id. lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet lorem ipsum dolor sit amet, consectetur adip sit lorem ipsum dolor sit amet',
             },
         ],
     },
     Contact: {
-        Info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
+        // Info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
+        Info: '',
         buttons: [
             {
                 _id: 1,

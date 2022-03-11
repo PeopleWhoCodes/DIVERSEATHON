@@ -91,7 +91,10 @@ export default Navbar
 
 const TopLink = ({ title, id }) => {
     return (
-        <HashLink to={`/#${id}`} className='text-xl font-medium cursor-pointer'>
+        <HashLink
+            to={`/#${id}`}
+            className='text-xl text-white font-medium cursor-pointer'
+        >
             {title}
         </HashLink>
     )

@@ -7,7 +7,7 @@ const SponsorContainer = ({ data }) => {
             {data?.map((sponsor) => (
                 <SposnorTimeline
                     heading={sponsor.title}
-                    id={sponsor._id}
+                    // id={sponsor._id}
                     key={sponsor._id}
                     data={sponsor.sponsors}
                 />

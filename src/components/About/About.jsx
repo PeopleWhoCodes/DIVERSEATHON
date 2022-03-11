@@ -11,14 +11,17 @@ const About = ({ data }) => {
                 <h2 className='text-TextDarkBlue text-3xl font-bold tracking-wide screen1:text-4xl'>
                     About
                 </h2>
-                <h3 className='text-3xl font-semibold tracking-wide screen1:text-4xl'>
+                <h3 className='text-3xl font-semibold tracking-wide screen1:text-4xl text-white'>
                     Diverseathon
                 </h3>
             </div>
             {/* Right Heading */}
             <div className='right max-w-[75%] screen1:max-w-full'>
-                <p className='text-2xl text-TextPassage screen2:text-xl screen4:text-lg'>
-                    {data.about}
+                <p className='text-2xl text-TextPassageLight screen2:text-xl screen4:text-lg'>
+                    {data.about.para1}
+                    <br />
+                    <br />
+                    {data.about.para2}
                 </p>
             </div>
         </div>

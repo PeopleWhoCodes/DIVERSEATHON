@@ -1,0 +1,14 @@
+.transparent__button__ {
+    font-weight: medium;
+    border: 2px solid white;
+}
+
+.transparent__button__:hover {
+    background: linear-gradient(98.36deg, #8b47fe 14.11%, #02deb8 95.81%);
+    transform: all 0.3s ease-in-out;
+}
+
+.gradient__button__ {
+    background: linear-gradient(98.36deg, #8b47fe 14.11%, #02deb8 95.81%);
+    font-weight: medium;
+}

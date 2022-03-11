@@ -19,9 +19,9 @@ const Event = ({ data }) => {
 
     return (
         <div id='EVENT' className='px-5'>
-            <div className='innerTrackBox px-20 py-20 shadow bg-Primary rounded-lg flex flex-col items-center gap-y-14 screen2:px-14 screen4:px-4'>
+            <div className='innerTrackBox px-20 shadow rounded-lg flex flex-col items-center gap-y-14 screen2:px-14 screen4:px-4'>
                 <Heading text={'EVENTS'} invertColor />
-                <Paragraph text={data?.Info} />
+                <Paragraph text={data?.Info} color={`text-TextPassageLight`} />
                 <div className='flex w-full gap-x-16 flex-wrap items-center justify-center gap-y-10'>
                     {currentData.length > 0 ? (
                         currentData.map((event) => (

@@ -1,4 +1,8 @@
 /* NAVBAR */
+nav {
+    background: linear-gradient(90.21deg, #8c46ff 0%, #00e0b8 100%);
+}
+
 nav .hamburger.active .bar:nth-child(2) {
     opacity: 0;
 }

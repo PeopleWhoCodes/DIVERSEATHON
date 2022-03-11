@@ -4,18 +4,21 @@ module.exports = {
         extend: {
             colors: {
                 DarkBack: '#000209',
-                Primary: '#202833',
+                Primary: '#8B48FE',
                 FaqHeading: '#202C33',
                 FaqBody: '#949494',
+                HomeCardHeading: '#32A9D1',
                 Secondary: '#66FCF3',
                 Gray: '#C2CFF3',
-                TextPassage: '#949494',
+                TextPassageLight: '#E7E7E7',
+                TextPassageDark: '#2D3131',
                 ButtonBg: '#00B1B1',
-                TextDarkBlue: '#46A29F',
+                TextDarkBlue: '#01DFB8',
                 SponsorCard: '#E8E7D9',
                 TextSchedule: '#BBE8E6',
-                TrackBack: '#E8FFFE',
+                TrackBack: '#F9F9F9',
                 CardBack: '#FFF',
+                DarkButtonText: '#2D3131',
             },
             screens: {
                 screen6: { max: '950px' },
@@ -47,6 +50,7 @@ module.exports = {
             },
             backgroundImage: {
                 backgroundHeroImage: "url('/src/assets/img/bgHero.svg')",
+                backgroundHomeCard: "url('/src/assets/img/HomeCardBack.png')",
             },
         },
     },

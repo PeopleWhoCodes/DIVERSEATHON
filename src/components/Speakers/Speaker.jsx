@@ -20,10 +20,10 @@ const Speakers = ({ data }) => {
     return (
         <div
             id='SPEAKERS'
-            className='flex flex-col gap-y-8 items-center justify-center py-20 px-20 screen2:px-14 screen4:px-10'
+            className='flex flex-col gap-y-8 items-center justify-center px-20 screen2:px-14 screen4:px-10'
         >
-            <Heading text={'SPEAKERS'} />
-            <Paragraph text={data?.Info} />
+            <Heading text={'SPEAKERS'} invertColor />
+            <Paragraph text={data?.Info} color={`text-TextPassageLight`} />
             <div className='speaker-wrapper flex items-center justify-center gap-x-14 gap-y-8 flex-wrap my-10'>
                 {currentData.length > 0 ? (
                     currentData.map((speaker) => (

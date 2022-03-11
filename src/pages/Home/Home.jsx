@@ -16,7 +16,7 @@ import Faq from './../../components/Faq/Faq'
 const Home = () => {
     console.log(HomePage)
     return (
-        <>
+        <div className='flex flex-col gap-y-24'>
             <Hero data={HomePage.Hero} />
             <About data={HomePage.About} />
             <Track data={HomePage.Tracks} />
@@ -28,6 +28,7 @@ const Home = () => {
                 data={HomePage.Registeration}
             />
             <Event data={HomePage.Events} />
+            <Schedule data={HomePage.Schedule} />
             <HomeCard
                 HeadingText={'GUIDE & RULES'}
                 id={'GUIDE'}
@@ -35,7 +36,6 @@ const Home = () => {
                 text2={'For Mentors'}
                 data={HomePage.Guide}
             />
-            <Schedule data={HomePage.Schedule} />
             <Speakers data={HomePage.Speakers} />
             <Prize data={HomePage.Prizes} />
             <Sponsors data={HomePage.Sponsors} />
@@ -47,7 +47,7 @@ const Home = () => {
                 text2={'Join Discord'}
                 data={HomePage.Contact}
             />
-        </>
+        </div>
     )
 }
 

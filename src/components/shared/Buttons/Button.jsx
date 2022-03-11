@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import './Button.css'
 // import { useNavigate } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 
@@ -21,17 +22,14 @@ const Button = ({
             transition hover:delay-200 hover:transition-color
             ${navbar ? 'px-5' : 'px-8'}
             ${more ? 'py-2' : 'py-2'}
-            ${
-                transparent
-                    ? 'border-2 hover:border-Gray hover:bg-ButtonBg border-ButtonBg text-ButtonBg hover:text-white'
-                    : 'bg-ButtonBg text-white'
-            }
+            ${transparent ? 'transparent__button__' : 'gradient__button__'}
             ${
                 hero
                     ? 'screen5:text-base screen5:px-6'
                     : 'screen3:py-2 screen3:px-10 screen5:text-lg screen5:px-0 screen5:w-full'
             }
             ${hidden ? 'hidden' : ''}
+            ${navbar ? 'bg-white text-DarkButtonText' : ''}
             `,
     }
     const HandleClick = (e) => {
@@ -52,6 +50,9 @@ const Button = ({
                     smooth
                     to={`/#${data?.link}`}
                     className={style.buttonWrapper}
+                    style={{
+                        background: navbar ? 'white' : '',
+                    }}
                 >
                     {text}
                 </HashLink>

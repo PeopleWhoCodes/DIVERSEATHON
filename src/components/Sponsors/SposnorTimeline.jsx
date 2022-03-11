@@ -5,7 +5,7 @@ const SposnorTimeline = ({ heading, id, data }) => {
     return (
         <div className='flex flex-col items-center'>
             <div
-                className={`text-Primary italic text-4xl font-bold screen3:text-3xl screen5:text-2xl`}
+                className={`text-HomeCardHeading text-4xl font-bold screen3:text-3xl screen5:text-2xl`}
             >
                 <p
                     className={` before:bg-[#E8FFFE] before:h-[35px] screen3:before:h-[28px] before:absolute before:mt-4 before:-ml-3 z-[10] before:z-[-1]
