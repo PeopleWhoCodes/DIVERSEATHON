@@ -50,7 +50,7 @@ Mails us your resume if you want to become our Hackathon Advocate 😎
 ## Community Founder 👩🏻‍💻
 <a href = "https://github.com/iamgunjan/iamgunjan"><img src="https://avatars.githubusercontent.com/u/53567221?v=4" width=50, height=50/></a>
   
-## Techsahead Contributors 💪🏻
+## PeopleWhoCodes Core Team 💪🏻
 <a href = "https://github.com/Komal-99"><img src="https://avatars.githubusercontent.com/u/74819092?s=400&v=4" width=50, height=50/></a>
   <a href = "https://github.com/Karan-Dhingra"><img src="https://avatars.githubusercontent.com/u/68160897?v=44" width=50, height=50/></a>
   <a href = "https://github.com/Divyanshi-03"><img src="https://avatars.githubusercontent.com/u/85453778?v=4" width=50, height=50/></a>
