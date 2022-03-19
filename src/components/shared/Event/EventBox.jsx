@@ -3,7 +3,7 @@ import React from 'react'
 const EventBox = ({ data }) => {
     return (
         <div>
-            <div className='w-[380px] h-[] flex flex-col bg-CardBack shadow-xl rounded-lg shadow-[#13181F] screen4:w-[320px] screen5:w-full screen5:shadow'>
+            <div className='w-[350px] h-[] flex flex-col bg-CardBack shadow-md rounded-lg shadow-[#13181F] screen4:w-[320px] screen5:w-full screen5:shadow'>
                 {/* Left Image */}
                 <div className='overflow-hidden h-[200px] screen4:h-[150px]'>
                     <img

@@ -16,12 +16,13 @@ import Faq from './../../components/Faq/Faq'
 const Home = () => {
     console.log(HomePage)
     return (
-        <div className='flex flex-col gap-y-24'>
+        <div className='flex flex-col gap-y-12'>
             <Hero data={HomePage.Hero} />
             <About data={HomePage.About} />
             <Track data={HomePage.Tracks} />
             <HomeCard
                 HeadingText={'REGISTERATION'}
+                bgImage={'bg-backgroundHomeCard'}
                 id={'REGISTERATION'}
                 text1={'Apply as Participant'}
                 text2={'Apply for Mentor'}
@@ -31,6 +32,7 @@ const Home = () => {
             <Schedule data={HomePage.Schedule} />
             <HomeCard
                 HeadingText={'GUIDE & RULES'}
+                bgImage={'bg-backgroundHomeCard2'}
                 id={'GUIDE'}
                 text1={'For Participants'}
                 text2={'For Mentors'}
@@ -40,13 +42,6 @@ const Home = () => {
             <Prize data={HomePage.Prizes} />
             <Sponsors data={HomePage.Sponsors} />
             <Faq data={HomePage.Faq} />
-            <HomeCard
-                HeadingText={'CONTACT US'}
-                id={'CONTACT'}
-                text1={'Mail Us'}
-                text2={'Join Discord'}
-                data={HomePage.Contact}
-            />
         </div>
     )
 }

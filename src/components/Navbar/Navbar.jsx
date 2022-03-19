@@ -52,17 +52,18 @@ const Navbar = () => {
             <nav className='navbar w-full h-20 flex items-center justify-between px-5 py-3'>
                 {/* left */}
                 <div className='left'>
-                    <img src={logo} alt='PWC' className='w-[45px] h-[45px]' />
+                    <img src={logo} alt='PWC' className='w-[80%] h-[45px]' />
                 </div>
                 {/* center */}
                 <div className='center flex items-center gap-x-6 screen8:hidden'>
-                    <TopLink title={'About'} id={'ABOUT'} />
-                    <TopLink title={'Tracks'} id={'TRACK'} />
-                    <TopLink title={'Schedule'} id={'SCHEDULE'} />
-                    <TopLink title={'Speakers'} id={'SPEAKERS'} />
-                    <TopLink title={'Sponsors'} id={'SPONSORS'} />
-                    {/* <TopLink title={'Team'} id={'ABOUT'} /> */}
-                    <TopLink title={'FAQs'} id={'FAQ'} />
+                    <TopLink title={'About'} link={'#ABOUT'} />
+                    <TopLink title={'Events'} link={'events'} />
+                    <TopLink title={'Schedule'} link={'#SCHEDULE'} />
+                    <TopLink title={'Speakers'} link={'speakers'} />
+                    <TopLink title={'Prizes'} link={'prizes'} />
+                    <TopLink title={'Sponsors'} link={'#SPONSORS'} />
+                    <TopLink title={'Team'} link={'team'} />
+                    <TopLink title={'FAQs'} link={'#FAQ'} />
                 </div>
                 {/* right */}
                 <div className='right screen8:hidden'>
@@ -89,10 +90,10 @@ const Navbar = () => {
 
 export default Navbar
 
-const TopLink = ({ title, id }) => {
+const TopLink = ({ title, link }) => {
     return (
         <HashLink
-            to={`/#${id}`}
+            to={`/${link}`}
             className='text-xl text-white font-medium cursor-pointer'
         >
             {title}

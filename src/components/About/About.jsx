@@ -4,7 +4,7 @@ const About = ({ data }) => {
     return (
         <div
             id='ABOUT'
-            className='flex justify-between px-14 py-20 screen1:flex-col screen1:gap-y-5 screen4:px-10'
+            className='flex justify-between px-14 screen1:flex-col screen1:gap-y-5 screen4:px-10'
         >
             {/* Left Heading */}
             <div className='left'>

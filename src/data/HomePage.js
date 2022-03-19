@@ -261,7 +261,7 @@ export const HomePage = {
         ],
     },
     Sponsors: {
-        Info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae felis, nisl eleifend mauris, eu nunc tincidunt. Amet et tellus accumsan,.',
+        Info: 'Meet our sponsors, who are supporting us for the good cause of uplifting students in tech and diversefy it.',
         data: [
             {
                 _id: 1,

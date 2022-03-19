@@ -24,7 +24,7 @@ const Speakers = ({ data }) => {
         >
             <Heading text={'SPEAKERS'} invertColor />
             <Paragraph text={data?.Info} color={`text-TextPassageLight`} />
-            <div className='speaker-wrapper flex items-center justify-center gap-x-14 gap-y-8 flex-wrap my-10'>
+            <div className='speaker-wrapper flex items-center justify-center gap-x-16 gap-y-8 flex-wrap my-10'>
                 {currentData.length > 0 ? (
                     currentData.map((speaker) => (
                         <ImageCard key={speaker._id} data={speaker} />

@@ -51,6 +51,20 @@ module.exports = {
             backgroundImage: {
                 backgroundHeroImage: "url('/src/assets/img/bgHero.svg')",
                 backgroundHomeCard: "url('/src/assets/img/HomeCardBack.png')",
+                backgroundHomeCard2:
+                    "url('/src/assets/img/HomeCardBack_2.png')",
+                backgroundHomeFAQ: "url('/src/assets/img/HomeFaqBack.png')",
+                backgroundEvent_1: "url('/src/assets/img/back_event_1.png')",
+                backgroundTeam_1: "url('/src/assets/img/back_team_1.png')",
+                backgroundPrize_1: "url('/src/assets/img/back_prize_1.png')",
+                backgroundPrize_2: "url('/src/assets/img/back_prize_2.png')",
+                backgroundSpeaker_1:
+                    "url('/src/assets/img/back_speaker_1.png')",
+                backgroundSpeaker_2:
+                    "url('/src/assets/img/back_speaker_2.png')",
+                backgroundSpeaker_3:
+                    "url('/src/assets/img/back_speaker_3.png')",
+                backgroundHome: "url('/src/assets/img/background.png')",
             },
         },
     },
