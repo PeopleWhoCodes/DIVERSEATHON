@@ -25,7 +25,7 @@ const Speakers = ({ data }) => {
                         />
                     ))
                 ) : (
-                    <Anouncement invert />
+                    <Anouncement />
                 )}
             </div>
             <HomeCard
@@ -46,7 +46,7 @@ const Speakers = ({ data }) => {
                         />
                     ))
                 ) : (
-                    <Anouncement invert />
+                    <Anouncement />
                 )}
             </div>
             <HomeCard
@@ -67,7 +67,7 @@ const Speakers = ({ data }) => {
                         />
                     ))
                 ) : (
-                    <Anouncement invert />
+                    <Anouncement />
                 )}
             </div>
         </div>

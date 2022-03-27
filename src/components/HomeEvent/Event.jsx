@@ -28,7 +28,7 @@ const Event = ({ data }) => {
                             <EventBox key={event._id} data={event} />
                         ))
                     ) : (
-                        <Anouncement />
+                        <Anouncement invert />
                     )}
                 </div>
                 {data?.buttons.map((btn) => (

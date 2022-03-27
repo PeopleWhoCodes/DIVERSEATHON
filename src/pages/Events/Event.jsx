@@ -2,6 +2,7 @@ import React from 'react'
 import HomeCard from './../../components/shared/Cards/HomeCard'
 import { HomePage } from './../../data/HomePage'
 import EventBox from './../../components/shared/Event/EventBox'
+import Anouncement from './../../components/shared/Text/Anouncement'
 
 const Event = ({ data }) => {
     return (
@@ -15,9 +16,13 @@ const Event = ({ data }) => {
                 data={data.Event}
             />
             <div className='flex flex-wrap gap-x-6 gap-y-6 justify-center px-5 my-20'>
-                {data.Event.data.map((value, index) => {
-                    return <EventBox key={index} />
-                })}
+                {data.Event.data.length > 0 ? (
+                    data.Event.data.map((value, index) => {
+                        return <EventBox key={index} />
+                    })
+                ) : (
+                    <Anouncement />
+                )}
             </div>
         </>
     )

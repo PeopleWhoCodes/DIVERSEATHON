@@ -24,7 +24,7 @@ const Prize = ({ data }) => {
                         />
                     ))
                 ) : (
-                    <Anouncement invert />
+                    <Anouncement />
                 )}
             </div>
             <HomeCard
@@ -45,7 +45,7 @@ const Prize = ({ data }) => {
                         />
                     ))
                 ) : (
-                    <Anouncement invert />
+                    <Anouncement />
                 )}
             </div>
         </div>

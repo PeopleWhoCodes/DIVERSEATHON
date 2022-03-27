@@ -35,9 +35,9 @@ export const HomePage = {
     Tracks: {
         Info: 'Our tracks are based on real-life problems and aims to slove the problems for a better future of India, we also aim to uplift ‘Women in Tech’, hence we have one special track dedicated to them.',
         data: [
-            { _id: 1, img: TestImage, title: 'Fintech' },
-            { _id: 2, img: TestImage, title: 'Fintech' },
-            { _id: 3, img: TestImage, title: 'Fintech' },
+            // { _id: 1, img: TestImage, title: 'Fintech' },
+            // { _id: 2, img: TestImage, title: 'Fintech' },
+            // { _id: 3, img: TestImage, title: 'Fintech' },
             // { _id: 4, img: TestImage, title: 'Fintech' },
             // { _id: 5, img: TestImage, title: 'Fintech' },
             // { _id: 6, img: TestImage, title: 'Fintech' },
@@ -69,20 +69,20 @@ export const HomePage = {
     Events: {
         Info: 'Check out our hackathon events and participate in them to get some amazing insights and updates.',
         data: [
-            {
-                _id: 1,
-                img: TestImage,
-                title: 'Portfolio Development Bootcamp',
-                date: '15 March, 2022',
-                link: '/',
-            },
-            {
-                _id: 2,
-                img: TestImage,
-                title: 'Portfolio Development Bootcamp',
-                date: '15 March, 2022',
-                link: '/',
-            },
+            // {
+            //     _id: 1,
+            //     img: TestImage,
+            //     title: 'Portfolio Development Bootcamp',
+            //     date: '15 March, 2022',
+            //     link: '/',
+            // },
+            // {
+            //     _id: 2,
+            //     img: TestImage,
+            //     title: 'Portfolio Development Bootcamp',
+            //     date: '15 March, 2022',
+            //     link: '/',
+            // },
             // {
             //     _id: 3,
             //     img: TestImage,
@@ -204,16 +204,16 @@ export const HomePage = {
     Speakers: {
         Info: 'Meet our amazing speakers who will be sharing their knowledge with us.',
         data: [
-            { _id: 1, img: TestImage, title: 'Fintech' },
-            { _id: 2, img: TestImage, title: 'Fintech' },
-            { _id: 3, img: TestImage, title: 'Fintech' },
-            { _id: 4, img: TestImage, title: 'Fintech' },
-            { _id: 5, img: TestImage, title: 'Fintech' },
-            { _id: 6, img: TestImage, title: 'Fintech' },
-            { _id: 7, img: TestImage, title: 'Fintech' },
-            { _id: 8, img: TestImage, title: 'Fintech' },
-            { _id: 9, img: TestImage, title: 'Fintech' },
-            { _id: 10, img: TestImage, title: 'Fintech' },
+            // { _id: 1, img: TestImage, title: 'Fintech' },
+            // { _id: 2, img: TestImage, title: 'Fintech' },
+            // { _id: 3, img: TestImage, title: 'Fintech' },
+            // { _id: 4, img: TestImage, title: 'Fintech' },
+            // { _id: 5, img: TestImage, title: 'Fintech' },
+            // { _id: 6, img: TestImage, title: 'Fintech' },
+            // { _id: 7, img: TestImage, title: 'Fintech' },
+            // { _id: 8, img: TestImage, title: 'Fintech' },
+            // { _id: 9, img: TestImage, title: 'Fintech' },
+            // { _id: 10, img: TestImage, title: 'Fintech' },
         ],
         buttons: [
             {

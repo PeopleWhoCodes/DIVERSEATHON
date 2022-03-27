@@ -24,7 +24,7 @@ const Team = ({ data }) => {
                         />
                     ))
                 ) : (
-                    <Anouncement invert />
+                    <Anouncement />
                 )}
             </div>
         </div>
