@@ -41,4 +41,4 @@ const SposnorTimeline = ({ heading, id, data }) => {
     )
 }
 
-export default SposnorTimeline
+export default SposnorTimeline;
