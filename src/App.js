@@ -13,6 +13,7 @@ import { SpeakerPage } from './data/SpeakerPage'
 import { TeamPage } from './data/TeamPage'
 import { PrizePage } from './data/PrizePage'
 import { EventPage } from './data/EventPage'
+import Schedule1 from './components/Schedule/Schedule1'
 
 function App() {
     return (
@@ -25,7 +26,7 @@ function App() {
                     path='/events'
                     element={<Event data={EventPage} />}
                 />
-                <Route exact path='/schedule' element={<Schedule />} />
+                <Route exact path='/schedule' element={<Schedule1 />} />
                 <Route
                     exact
                     path='/speakers'

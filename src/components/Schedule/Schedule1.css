@@ -1,0 +1,446 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+  'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+  'Helvetica Neue', sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ position: relative;
+}
+
+.mainshedule{
+  
+  padding: 0.4rem 0.5rem;
+  text-align: center;
+  /* border:  2px solid rgb(255, 0, 0); */
+  width: 96%;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0.3rem 0.28rem 0.5rem 0.3rem rgba(184, 178, 178, 0.651) inset,-0.28rem -0.28rem 0.5rem 0.3rem rgba(184, 178, 178, 0.651) inset;
+  margin: 0rem auto;
+  border-radius: 0.5rem;
+  border:  0.2rem solid #ffffff;
+}
+
+#heading{
+  margin-top: 1rem;
+  margin-bottom: 1.6rem;
+  font-size: 2.6rem;
+    /* border: 2px solid rgb(0, 255, 136); */
+  text-align: center;
+  color: #8B48FE;
+  font-family: 'Segoe UI', 'Roboto',
+  'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+  'Helvetica Neue', sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ font-weight: 700;
+ letter-spacing: 0.14rem;
+}
+
+#headingpara{
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  /* font-weight: 900; */
+}
+
+.schedule{
+    /* border: 2px solid rgb(255, 187, 0); */
+    width: fit-content;
+    display: flex;
+    margin: auto;
+    /* background-color: rgb(214, 191, 143); */
+    text-align: center;
+    /* align-items: center; */
+}
+
+.schedule-wrapper {
+    position: relative;
+    padding: 2.2rem 0;
+   
+    width: 8rem;
+    
+  }
+  .schedule-wrapper:last-child:before {
+    height: 0;
+  }
+  .schedule-wrapper:before {
+    content: "";
+    background: #2D3131;
+    width: 8rem;
+    height: 0.2rem;
+    position:absolute;
+    left: 4rem;
+    margin-top: 8rem;
+   
+  }
+  .schedule-wrapper:after {
+    content: "";
+    background: #2D3131;
+    width: 0.2rem;
+    height: 3rem;
+    position: absolute;
+    left: 4.3rem;
+    top: 7rem;
+    
+  }
+  
+  .schedule-yr {
+    background: #2D3131;
+    border-radius: 100%;
+    position: absolute;
+    width: 3.2rem;
+    height: 3.2rem;
+    left:2.7rem;
+    top: 5rem;
+    line-height: 7.3rem;
+    text-align: center;
+    padding-top: 0.2rem;
+    z-index: 1;
+  }
+  
+ 
+
+  .images{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+  .circle{
+    width: 0.7rem;
+    height: 0.7rem;
+    position:absolute;
+    top: 9.9rem;
+    left: 4rem;
+    border-radius: 50%;
+    border: 0.2rem solid #2D3131;
+    background-color: #2D3131;
+  }
+
+  .schedule-info h3{
+   
+    margin-top: 9rem;
+    /* border: 2px solid rgb(0, 255, 221); */
+    text-align:left;
+    color: #2D3131;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 0.8rem;
+   width: 17rem;
+   position: relative;
+   left: 1.8rem;
+   font-weight: 700;
+  }
+  .schedule-info .para {
+    color: #2D3131;
+    font-size: 0.8rem;
+      width: 8rem;
+    text-align: center;
+    position: relative;
+   left: 1.1rem;
+   letter-spacing: 0.1rem;
+    margin-top: 0.5rem;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+  }
+  
+
+  /* @media  screen and (max-width:1024px){
+    html{
+      font-size: 100%;
+    }
+  } */
+
+  @media  screen and (max-width:1024px){
+    html{
+      font-size: 96%;
+    }
+  }
+  @media  screen and (max-width:955px){
+    html{
+      font-size: 94%;
+    }
+  }
+
+  @media  screen and (min-width:901px) and (max-width:934px){
+    html{
+      font-size: 91%;
+    }
+  }
+
+  @media  screen and (min-width:866px) and (max-width:900px){
+    html{
+      font-size: 87%;
+    }
+  }
+
+  @media  screen and (max-width:866px){
+    html{
+      font-size: 81%;
+    }
+  }
+  
+  @media  screen and (max-width:791px){
+    html{
+      font-size: 74%;
+    }
+  }
+
+  @media  screen and (max-width:700px){
+    html{
+      font-size: 70%;
+    }
+    
+  }
+  
+  @media  screen and (min-width:601px) and (max-width:676px){
+    html{
+      font-size: 63%;
+    }
+    
+  }
+
+  @media  screen and (min-width:540px) and (max-width:600px){
+    html{
+      font-size: 56%;
+    }
+    
+  }
+
+  /* @media  screen and (min-width:428px) and (max-width:500px){
+    html{
+      font-size: 56%;
+    }
+    
+  }
+  */
+
+  @media  screen and (min-width:321px) and (max-width:540px) {
+
+    html{
+      font-size: 100%;
+    }
+    body{
+      /* background-color: rgb(185, 140, 42); */
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+  'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+  'Helvetica Neue', sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+    }
+   
+.schedule{
+  /* border: 2px solid rgb(0, 4, 255); */
+  display: block;
+  margin: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.schedule-wrapper {
+  position: relative;
+  padding: 2.2rem 0;
+  /* border: 2px solid rgb(251, 255, 0); */
+  display: flex;
+  justify-content: space-around;
+}
+.schedule-wrapper:last-child:before {
+  height: 0;
+}
+.schedule-wrapper:before {
+  content: "";
+  background: #2D3131;
+  width: 0.2rem;
+  height: 5rem;
+  position:absolute;
+  left: 1.7rem;
+  margin-top: 0rem;
+}
+.schedule-wrapper:after {
+
+  display: none;
+  
+}
+
+.schedule-yr {
+  background: #2D3131;
+  border-radius: 100%;
+  position: absolute;
+  width: 3.5rem;
+  height: 3.5rem;
+  left:0.2rem;
+  top: 0.7rem;
+  line-height: 7.3rem;
+  text-align: center;
+  padding-top: 0.2rem;
+  z-index: 1;
+  
+}
+
+
+
+.images{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 0.35rem;
+  left: 0.5rem;
+
+}
+.circle{
+  
+  display: none;
+}
+.schedule-info{
+  /* border: 2px solid rgb(255, 0, 0); */
+}
+
+.schedule-info h3{
+ 
+  margin-top: -1.4rem;
+  text-align:left;
+  color: #2D3131;
+  font-size: 0.8rem;
+  width: 14rem;
+  position: absolute;
+  left: 7rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ /* top: ; */
+}
+.schedule-info .para {
+  color: #2D3131;
+  font-size: 0.8rem;
+    width: 8rem;
+  text-align: left;
+  position: absolute;
+ left: 7rem;
+ letter-spacing: 0.1rem;
+  margin-top: 0.2rem;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+}
+
+
+@media  screen and (max-width:320px) {
+
+  html{
+    font-size: 80%;
+  }
+  body{
+    /* background-color: white; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+'Helvetica Neue', sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+  }
+  .mainshedule{
+    width: 93%;
+    margin: 0rem auto;
+  }
+.schedule{
+/* border: 2px solid rgb(0, 4, 255); */
+display: block;
+margin: 2rem;
+text-align: center;
+}
+
+.schedule-wrapper {
+position: relative;
+padding: 2.2rem 0;
+/* border: 2px solid rgb(251, 255, 0); */
+display: flex;
+justify-content: space-around;
+}
+.schedule-wrapper:last-child:before {
+height: 0;
+}
+.schedule-wrapper:before {
+content: "";
+background: #2D3131;
+width: 0.2rem;
+height: 5rem;
+position:absolute;
+left: 1.7rem;
+margin-top: 0rem;
+}
+.schedule-wrapper:after {
+
+display: none;
+
+}
+
+.schedule-yr {
+background: #2D3131;
+border-radius: 100%;
+position: absolute;
+width: 3.8rem;
+height: 3.8rem;
+left:0.2rem;
+top: 0.7rem;
+line-height: 7.3rem;
+text-align: center;
+padding-top: 0.2rem;
+z-index: 1;
+
+}
+
+
+.images{
+width: 2.8rem;
+height: 2.8rem;
+position: absolute;
+top: 0.35rem;
+left: 0.5rem;
+/* z-index: 1; */
+
+}
+.circle{
+
+display: none;
+}
+.schedule-info{
+/* border: 2px solid rgb(255, 0, 0); */
+
+}
+
+.schedule-info h3{
+
+margin-top: -1.4rem;
+/* border: 2px solid rgb(0, 255, 221); */
+text-align:left;
+color: #2D3131;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 0.8rem;
+width: 14rem;
+position: absolute;
+left: 7rem;
+}
+.schedule-info .para {
+color: #2D3131;
+font-size: 0.8rem;
+  width: 8rem;
+text-align: left;
+position: absolute;
+left: 7rem;
+letter-spacing: 0.1rem;
+margin-top: 0.2rem;
+font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+
+}
+
+
+  /* 320-480
+  480
+  600
+  768 */

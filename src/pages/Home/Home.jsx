@@ -6,7 +6,8 @@ import Track from './../../components/Track/Track'
 import HomeCard from './../../components/shared/Cards/HomeCard'
 import Event from './../../components/HomeEvent/Event'
 // import Guide from './../../components/Guide/Guide'
-import Schedule from './../../components/Schedule/Schedule'
+// import Schedule from './../../components/Schedule/Schedule'
+import Schedule1 from '../../components/Schedule/Schedule1'
 import Speakers from './../../components/Speakers/Speaker'
 import Prize from './../../components/Prizes/Prize'
 import Sponsors from './../../components/Sponsors/Sponsors'
@@ -29,7 +30,8 @@ const Home = () => {
                 data={HomePage.Registeration}
             />
             <Event data={HomePage.Events} />
-            <Schedule data={HomePage.Schedule} />
+            {/* <Schedule data={HomePage.Schedule} /> */}
+             <Schedule1/>
             <HomeCard
                 HeadingText={'GUIDE & RULES'}
                 bgImage={'bg-backgroundHomeCard2'}
